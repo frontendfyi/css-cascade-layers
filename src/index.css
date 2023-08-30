@@ -1,0 +1,69 @@
+@layer reset, vendor, base, components, utilities;
+@import "react-day-picker/dist/style.css" layer(vendor);
+
+@layer reset {
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    margin: 0;
+  }
+}
+
+@layer base {
+  :root {
+    background: #23242d;
+    color: #fff;
+    font-family: "PT Sans", "sans-serif";
+  }
+
+  main {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  h1 {
+    margin: 20px;
+  }
+
+  .btn + .btn {
+    margin-left: 20px;
+  }
+
+  .rich-text > p {
+    margin-bottom: 24px;
+  }
+}
+
+@layer components {
+  .btn {
+    background: #5c4f9d;
+    font-size: 24px;
+    border-radius: 8px;
+    color: #fff;
+    padding: 12px 24px;
+    border: none;
+  }
+
+  .rdp-nav {
+    position: relative;
+  }
+}
+
+@layer utilities {
+  .ml-12 {
+    margin-left: 60px;
+  }
+
+  .large {
+    margin-bottom: 60px;
+    font-size: 24px;
+  }
+}
